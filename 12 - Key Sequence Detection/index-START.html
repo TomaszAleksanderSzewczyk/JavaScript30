@@ -7,6 +7,25 @@
 </head>
 <body>
 <script>
+  const pressed= [];
+  const secretCode='weeb';
+  window.addEventListener('keyup',(e)=>{
+    console.log(e.key);
+    pressed.push(e.key);
+    pressed.splice(-secretCode.length-1, pressed.length-secretCode.length);
+    if(pressed.join('').includes(secretCode)){
+    console.log("pik pik");
+cornify_add();
+    }
+  });
+
+  function createCheckDigit(membershipId) {
+  // Write the code that goes here.
+  const digits =membershipID.split("");
+}
+
+console.log(createCheckDigit("55555"));
+
 </script>
 </body>
 </html>
